@@ -1,7 +1,6 @@
 # Kumulativ – Pflichtteile statt Paare – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-kumulativ-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-kumulativ-demo.streamlit.app/)**
 
 Stück der Linie **SAT und Constraint Programming** (CP-Arm) in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“. Die Demo zeigt **eine Frage der Constraint-Programmierung** an einem wachsenden Beispiel: Eine **kumulative Ressource** hat eine Kapazität größer 1 und lässt mehrere Aktivitäten zugleich laufen. Wer nur Paare betrachtet, übersieht, was das **Zeitprofil der Pflichtteile** schon weiß: Wo eine Aktivität wegen ihres engen Fensters sicher läuft, ist Kapazität belegt, und die Fenster der anderen schrumpfen (**Timetabling**). Das Vehikel ist das **Ressourcenproblem mit Vorrang** (RCPSP: Aktivitäten mit Dauer und Bedarf, Vorrangkanten, Ziel: kleinster Makespan). Verwandt: [rcpsp-demo](https://github.com/sebastian-hanisch/rcpsp-demo) (dort Prioritätsregeln und CP-SAT als Referenz; hier ein anderes Modell mit allgemeinem Vorranggraph und mehreren Ressourcen, keine Zahl wiederholt), `disjunktiv-edge-finding-demo` (gleiche Linie) (Kapazität 1: der Paar-Test ersetzt dort das Timetabling).
 
