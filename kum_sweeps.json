@@ -1,0 +1,2389 @@
+{
+ "meta": {
+  "skript": "tools/messung_sweeps.py",
+  "ortools": "9.15.6755",
+  "python": "3.14.6",
+  "datum": "2026-11-11",
+  "hinweis": "Zufalls-Seeds sind SplitMix64-Seeds (kum_scenario.make_instanz); CP-SAT mit einem Arbeiter und 60 s Grenze"
+ },
+ "reihen": {
+  "A": {
+   "n": 10,
+   "ressourcen": 1,
+   "kap": 3,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "budget": 20000,
+   "stufen": [
+    0,
+    1,
+    2
+   ],
+   "instanzen": [
+    {
+     "seed": 0,
+     "untere_schranke": 28,
+     "start_schranke": 30,
+     "cpsat": {
+      "optimum": 30,
+      "bewiesen": true,
+      "konflikte": 322,
+      "branches": 660
+     },
+     "stufen": {
+      "0": {
+       "optimum": 30,
+       "bewiesen": true,
+       "knoten": 6277,
+       "fehlschlaege": 3139,
+       "blaetter": 0,
+       "runden": 9415,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 2893,
+       "fehl_fest": 246,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 30,
+       "bewiesen": true,
+       "knoten": 459,
+       "fehlschlaege": 230,
+       "blaetter": 0,
+       "runden": 699,
+       "loesungen": 0,
+       "tt_schluesse": 368,
+       "fehl_vorrang": 39,
+       "fehl_fest": 0,
+       "fehl_timetabling": 191,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 30,
+       "bewiesen": true,
+       "knoten": 459,
+       "fehlschlaege": 230,
+       "blaetter": 0,
+       "runden": 699,
+       "loesungen": 0,
+       "tt_schluesse": 368,
+       "fehl_vorrang": 39,
+       "fehl_fest": 0,
+       "fehl_timetabling": 191,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 1,
+     "untere_schranke": 36,
+     "start_schranke": 39,
+     "cpsat": {
+      "optimum": 37,
+      "bewiesen": true,
+      "konflikte": 6033,
+      "branches": 10420
+     },
+     "stufen": {
+      "0": {
+       "optimum": 39,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9993,
+       "blaetter": 0,
+       "runden": 20019,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 4,
+       "fehl_fest": 9989,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 38,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9990,
+       "blaetter": 1,
+       "runden": 34603,
+       "loesungen": 1,
+       "tt_schluesse": 24199,
+       "fehl_vorrang": 11,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9979,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 37,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9992,
+       "blaetter": 2,
+       "runden": 33232,
+       "loesungen": 2,
+       "tt_schluesse": 25537,
+       "fehl_vorrang": 117,
+       "fehl_fest": 0,
+       "fehl_timetabling": 8194,
+       "fehl_energie": 1681,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 2,
+     "untere_schranke": 28,
+     "start_schranke": 33,
+     "cpsat": {
+      "optimum": 33,
+      "bewiesen": true,
+      "konflikte": 152,
+      "branches": 301
+     },
+     "stufen": {
+      "0": {
+       "optimum": 33,
+       "bewiesen": true,
+       "knoten": 2247,
+       "fehlschlaege": 1124,
+       "blaetter": 0,
+       "runden": 3370,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 1108,
+       "fehl_fest": 16,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 33,
+       "bewiesen": true,
+       "knoten": 125,
+       "fehlschlaege": 63,
+       "blaetter": 0,
+       "runden": 195,
+       "loesungen": 0,
+       "tt_schluesse": 176,
+       "fehl_vorrang": 10,
+       "fehl_fest": 0,
+       "fehl_timetabling": 53,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 33,
+       "bewiesen": true,
+       "knoten": 125,
+       "fehlschlaege": 63,
+       "blaetter": 0,
+       "runden": 194,
+       "loesungen": 0,
+       "tt_schluesse": 176,
+       "fehl_vorrang": 10,
+       "fehl_fest": 0,
+       "fehl_timetabling": 52,
+       "fehl_energie": 1,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 3,
+     "untere_schranke": 36,
+     "start_schranke": 40,
+     "cpsat": {
+      "optimum": 40,
+      "bewiesen": true,
+      "konflikte": 0,
+      "branches": 17
+     },
+     "stufen": {
+      "0": {
+       "optimum": 40,
+       "bewiesen": true,
+       "knoten": 3199,
+       "fehlschlaege": 1600,
+       "blaetter": 0,
+       "runden": 4798,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 1600,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 40,
+       "bewiesen": true,
+       "knoten": 1055,
+       "fehlschlaege": 528,
+       "blaetter": 0,
+       "runden": 1795,
+       "loesungen": 0,
+       "tt_schluesse": 696,
+       "fehl_vorrang": 188,
+       "fehl_fest": 0,
+       "fehl_timetabling": 340,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 40,
+       "bewiesen": true,
+       "knoten": 1041,
+       "fehlschlaege": 521,
+       "blaetter": 0,
+       "runden": 1595,
+       "loesungen": 0,
+       "tt_schluesse": 330,
+       "fehl_vorrang": 185,
+       "fehl_fest": 0,
+       "fehl_timetabling": 210,
+       "fehl_energie": 126,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 4,
+     "untere_schranke": 35,
+     "start_schranke": 35,
+     "cpsat": {
+      "optimum": 35,
+      "bewiesen": true,
+      "konflikte": 0,
+      "branches": 11
+     },
+     "stufen": {
+      "0": {
+       "optimum": 35,
+       "bewiesen": true,
+       "knoten": 0,
+       "fehlschlaege": 0,
+       "blaetter": 0,
+       "runden": 0,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 0,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 35,
+       "bewiesen": true,
+       "knoten": 0,
+       "fehlschlaege": 0,
+       "blaetter": 0,
+       "runden": 0,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 0,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 35,
+       "bewiesen": true,
+       "knoten": 0,
+       "fehlschlaege": 0,
+       "blaetter": 0,
+       "runden": 0,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 0,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 5,
+     "untere_schranke": 19,
+     "start_schranke": 21,
+     "cpsat": {
+      "optimum": 20,
+      "bewiesen": true,
+      "konflikte": 238,
+      "branches": 524
+     },
+     "stufen": {
+      "0": {
+       "optimum": 20,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9991,
+       "blaetter": 1,
+       "runden": 22278,
+       "loesungen": 1,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 323,
+       "fehl_fest": 9668,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 20,
+       "bewiesen": true,
+       "knoten": 2299,
+       "fehlschlaege": 1149,
+       "blaetter": 1,
+       "runden": 4036,
+       "loesungen": 1,
+       "tt_schluesse": 1914,
+       "fehl_vorrang": 261,
+       "fehl_fest": 0,
+       "fehl_timetabling": 888,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 20,
+       "bewiesen": true,
+       "knoten": 2217,
+       "fehlschlaege": 1108,
+       "blaetter": 1,
+       "runden": 3642,
+       "loesungen": 1,
+       "tt_schluesse": 1694,
+       "fehl_vorrang": 220,
+       "fehl_fest": 0,
+       "fehl_timetabling": 656,
+       "fehl_energie": 232,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 6,
+     "untere_schranke": 21,
+     "start_schranke": 22,
+     "cpsat": {
+      "optimum": 22,
+      "bewiesen": true,
+      "konflikte": 0,
+      "branches": 21
+     },
+     "stufen": {
+      "0": {
+       "optimum": 22,
+       "bewiesen": true,
+       "knoten": 6019,
+       "fehlschlaege": 3010,
+       "blaetter": 0,
+       "runden": 9028,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 3008,
+       "fehl_fest": 2,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 22,
+       "bewiesen": true,
+       "knoten": 497,
+       "fehlschlaege": 249,
+       "blaetter": 0,
+       "runden": 742,
+       "loesungen": 0,
+       "tt_schluesse": 85,
+       "fehl_vorrang": 16,
+       "fehl_fest": 0,
+       "fehl_timetabling": 233,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 22,
+       "bewiesen": true,
+       "knoten": 475,
+       "fehlschlaege": 238,
+       "blaetter": 0,
+       "runden": 709,
+       "loesungen": 0,
+       "tt_schluesse": 80,
+       "fehl_vorrang": 16,
+       "fehl_fest": 0,
+       "fehl_timetabling": 212,
+       "fehl_energie": 10,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 7,
+     "untere_schranke": 34,
+     "start_schranke": 38,
+     "cpsat": {
+      "optimum": 38,
+      "bewiesen": true,
+      "konflikte": 11,
+      "branches": 28
+     },
+     "stufen": {
+      "0": {
+       "optimum": 38,
+       "bewiesen": true,
+       "knoten": 45,
+       "fehlschlaege": 23,
+       "blaetter": 0,
+       "runden": 67,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 23,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 38,
+       "bewiesen": true,
+       "knoten": 11,
+       "fehlschlaege": 6,
+       "blaetter": 0,
+       "runden": 16,
+       "loesungen": 0,
+       "tt_schluesse": 8,
+       "fehl_vorrang": 4,
+       "fehl_fest": 0,
+       "fehl_timetabling": 2,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 38,
+       "bewiesen": true,
+       "knoten": 3,
+       "fehlschlaege": 2,
+       "blaetter": 0,
+       "runden": 4,
+       "loesungen": 0,
+       "tt_schluesse": 5,
+       "fehl_vorrang": 0,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 2,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 8,
+     "untere_schranke": 36,
+     "start_schranke": 38,
+     "cpsat": {
+      "optimum": 37,
+      "bewiesen": true,
+      "konflikte": 379,
+      "branches": 912
+     },
+     "stufen": {
+      "0": {
+       "optimum": 37,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9989,
+       "blaetter": 1,
+       "runden": 20250,
+       "loesungen": 1,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 19,
+       "fehl_fest": 9970,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 37,
+       "bewiesen": true,
+       "knoten": 357,
+       "fehlschlaege": 178,
+       "blaetter": 1,
+       "runden": 603,
+       "loesungen": 1,
+       "tt_schluesse": 397,
+       "fehl_vorrang": 67,
+       "fehl_fest": 0,
+       "fehl_timetabling": 111,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 37,
+       "bewiesen": true,
+       "knoten": 357,
+       "fehlschlaege": 178,
+       "blaetter": 1,
+       "runden": 599,
+       "loesungen": 1,
+       "tt_schluesse": 394,
+       "fehl_vorrang": 67,
+       "fehl_fest": 0,
+       "fehl_timetabling": 107,
+       "fehl_energie": 4,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 9,
+     "untere_schranke": 24,
+     "start_schranke": 27,
+     "cpsat": {
+      "optimum": 26,
+      "bewiesen": true,
+      "konflikte": 0,
+      "branches": 11
+     },
+     "stufen": {
+      "0": {
+       "optimum": 26,
+       "bewiesen": true,
+       "knoten": 4689,
+       "fehlschlaege": 2344,
+       "blaetter": 1,
+       "runden": 6630,
+       "loesungen": 1,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 1952,
+       "fehl_fest": 392,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 26,
+       "bewiesen": true,
+       "knoten": 445,
+       "fehlschlaege": 222,
+       "blaetter": 1,
+       "runden": 864,
+       "loesungen": 1,
+       "tt_schluesse": 831,
+       "fehl_vorrang": 10,
+       "fehl_fest": 0,
+       "fehl_timetabling": 212,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 26,
+       "bewiesen": true,
+       "knoten": 441,
+       "fehlschlaege": 220,
+       "blaetter": 1,
+       "runden": 663,
+       "loesungen": 1,
+       "tt_schluesse": 470,
+       "fehl_vorrang": 8,
+       "fehl_fest": 0,
+       "fehl_timetabling": 18,
+       "fehl_energie": 194,
+       "fehl_wurzel": 0
+      }
+     }
+    }
+   ]
+  },
+  "B": {
+   "n": 15,
+   "ressourcen": 1,
+   "kap": 4,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "budget": 20000,
+   "stufen": [
+    0,
+    1,
+    2
+   ],
+   "instanzen": [
+    {
+     "seed": 0,
+     "untere_schranke": 45,
+     "start_schranke": 50,
+     "cpsat": {
+      "optimum": 46,
+      "bewiesen": true,
+      "konflikte": 7744,
+      "branches": 16196
+     },
+     "stufen": {
+      "0": {
+       "optimum": 50,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9989,
+       "blaetter": 0,
+       "runden": 22113,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 746,
+       "fehl_fest": 9243,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 47,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9992,
+       "blaetter": 3,
+       "runden": 33332,
+       "loesungen": 3,
+       "tt_schluesse": 22727,
+       "fehl_vorrang": 1325,
+       "fehl_fest": 0,
+       "fehl_timetabling": 8667,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 47,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9991,
+       "blaetter": 3,
+       "runden": 31383,
+       "loesungen": 3,
+       "tt_schluesse": 15519,
+       "fehl_vorrang": 2106,
+       "fehl_fest": 0,
+       "fehl_timetabling": 6019,
+       "fehl_energie": 1866,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 1,
+     "untere_schranke": 69,
+     "start_schranke": 72,
+     "cpsat": {
+      "optimum": 70,
+      "bewiesen": true,
+      "konflikte": 7372,
+      "branches": 21241
+     },
+     "stufen": {
+      "0": {
+       "optimum": 72,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9991,
+       "blaetter": 0,
+       "runden": 30008,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 9970,
+       "fehl_fest": 21,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 71,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9994,
+       "blaetter": 1,
+       "runden": 30907,
+       "loesungen": 1,
+       "tt_schluesse": 17561,
+       "fehl_vorrang": 3649,
+       "fehl_fest": 0,
+       "fehl_timetabling": 6345,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 71,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9993,
+       "blaetter": 1,
+       "runden": 29246,
+       "loesungen": 1,
+       "tt_schluesse": 16665,
+       "fehl_vorrang": 3639,
+       "fehl_fest": 0,
+       "fehl_timetabling": 4676,
+       "fehl_energie": 1678,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 2,
+     "untere_schranke": 47,
+     "start_schranke": 51,
+     "cpsat": {
+      "optimum": 49,
+      "bewiesen": true,
+      "konflikte": 1993,
+      "branches": 4286
+     },
+     "stufen": {
+      "0": {
+       "optimum": 51,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9995,
+       "blaetter": 0,
+       "runden": 29841,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 9761,
+       "fehl_fest": 234,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 49,
+       "bewiesen": true,
+       "knoten": 9511,
+       "fehlschlaege": 4754,
+       "blaetter": 2,
+       "runden": 15207,
+       "loesungen": 2,
+       "tt_schluesse": 8453,
+       "fehl_vorrang": 998,
+       "fehl_fest": 0,
+       "fehl_timetabling": 3756,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 49,
+       "bewiesen": true,
+       "knoten": 8309,
+       "fehlschlaege": 4153,
+       "blaetter": 2,
+       "runden": 12618,
+       "loesungen": 2,
+       "tt_schluesse": 6725,
+       "fehl_vorrang": 684,
+       "fehl_fest": 0,
+       "fehl_timetabling": 2453,
+       "fehl_energie": 1016,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 3,
+     "untere_schranke": 39,
+     "start_schranke": 44,
+     "cpsat": {
+      "optimum": 39,
+      "bewiesen": true,
+      "konflikte": 894,
+      "branches": 2029
+     },
+     "stufen": {
+      "0": {
+       "optimum": 40,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9993,
+       "blaetter": 2,
+       "runden": 21258,
+       "loesungen": 2,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 88,
+       "fehl_fest": 9905,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 39,
+       "bewiesen": true,
+       "knoten": 189,
+       "fehlschlaege": 88,
+       "blaetter": 3,
+       "runden": 365,
+       "loesungen": 3,
+       "tt_schluesse": 331,
+       "fehl_vorrang": 22,
+       "fehl_fest": 0,
+       "fehl_timetabling": 66,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 39,
+       "bewiesen": true,
+       "knoten": 89,
+       "fehlschlaege": 38,
+       "blaetter": 3,
+       "runden": 153,
+       "loesungen": 3,
+       "tt_schluesse": 113,
+       "fehl_vorrang": 21,
+       "fehl_fest": 0,
+       "fehl_timetabling": 12,
+       "fehl_energie": 5,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 4,
+     "untere_schranke": 52,
+     "start_schranke": 52,
+     "cpsat": {
+      "optimum": 52,
+      "bewiesen": true,
+      "konflikte": 10992,
+      "branches": 43194
+     },
+     "stufen": {
+      "0": {
+       "optimum": 52,
+       "bewiesen": true,
+       "knoten": 0,
+       "fehlschlaege": 0,
+       "blaetter": 0,
+       "runden": 0,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 0,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 52,
+       "bewiesen": true,
+       "knoten": 0,
+       "fehlschlaege": 0,
+       "blaetter": 0,
+       "runden": 0,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 0,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 52,
+       "bewiesen": true,
+       "knoten": 0,
+       "fehlschlaege": 0,
+       "blaetter": 0,
+       "runden": 0,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 0,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 5,
+     "untere_schranke": 57,
+     "start_schranke": 61,
+     "cpsat": {
+      "optimum": 60,
+      "bewiesen": true,
+      "konflikte": 9377,
+      "branches": 29872
+     },
+     "stufen": {
+      "0": {
+       "optimum": 61,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9980,
+       "blaetter": 0,
+       "runden": 23098,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 303,
+       "fehl_fest": 9677,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 60,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9990,
+       "blaetter": 1,
+       "runden": 32274,
+       "loesungen": 1,
+       "tt_schluesse": 21138,
+       "fehl_vorrang": 4421,
+       "fehl_fest": 0,
+       "fehl_timetabling": 5569,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 60,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9992,
+       "blaetter": 1,
+       "runden": 29582,
+       "loesungen": 1,
+       "tt_schluesse": 16400,
+       "fehl_vorrang": 4313,
+       "fehl_fest": 0,
+       "fehl_timetabling": 3165,
+       "fehl_energie": 2514,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 6,
+     "untere_schranke": 50,
+     "start_schranke": 58,
+     "cpsat": {
+      "optimum": 58,
+      "bewiesen": true,
+      "konflikte": 0,
+      "branches": 16
+     },
+     "stufen": {
+      "0": {
+       "optimum": 58,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9990,
+       "blaetter": 0,
+       "runden": 30010,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 9990,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 58,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9995,
+       "blaetter": 0,
+       "runden": 37859,
+       "loesungen": 0,
+       "tt_schluesse": 29643,
+       "fehl_vorrang": 1106,
+       "fehl_fest": 0,
+       "fehl_timetabling": 8889,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 58,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9997,
+       "blaetter": 0,
+       "runden": 30524,
+       "loesungen": 0,
+       "tt_schluesse": 18828,
+       "fehl_vorrang": 1091,
+       "fehl_fest": 0,
+       "fehl_timetabling": 1537,
+       "fehl_energie": 7369,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 7,
+     "untere_schranke": 60,
+     "start_schranke": 62,
+     "cpsat": {
+      "optimum": 61,
+      "bewiesen": true,
+      "konflikte": 19166,
+      "branches": 65000
+     },
+     "stufen": {
+      "0": {
+       "optimum": 62,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9991,
+       "blaetter": 0,
+       "runden": 26577,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 5000,
+       "fehl_fest": 4991,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 61,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9991,
+       "blaetter": 1,
+       "runden": 32890,
+       "loesungen": 1,
+       "tt_schluesse": 24736,
+       "fehl_vorrang": 1573,
+       "fehl_fest": 0,
+       "fehl_timetabling": 8418,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 61,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9993,
+       "blaetter": 1,
+       "runden": 30367,
+       "loesungen": 1,
+       "tt_schluesse": 18856,
+       "fehl_vorrang": 1421,
+       "fehl_fest": 0,
+       "fehl_timetabling": 6535,
+       "fehl_energie": 2037,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 8,
+     "untere_schranke": 46,
+     "start_schranke": 50,
+     "cpsat": {
+      "optimum": 46,
+      "bewiesen": true,
+      "konflikte": 25728,
+      "branches": 55200
+     },
+     "stufen": {
+      "0": {
+       "optimum": 50,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9984,
+       "blaetter": 0,
+       "runden": 22798,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 84,
+       "fehl_fest": 9900,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 47,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9984,
+       "blaetter": 3,
+       "runden": 32273,
+       "loesungen": 3,
+       "tt_schluesse": 11161,
+       "fehl_vorrang": 429,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9555,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 46,
+       "bewiesen": true,
+       "knoten": 18363,
+       "fehlschlaege": 9165,
+       "blaetter": 4,
+       "runden": 28122,
+       "loesungen": 4,
+       "tt_schluesse": 8788,
+       "fehl_vorrang": 445,
+       "fehl_fest": 0,
+       "fehl_timetabling": 6581,
+       "fehl_energie": 2139,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 9,
+     "untere_schranke": 47,
+     "start_schranke": 51,
+     "cpsat": {
+      "optimum": 47,
+      "bewiesen": false,
+      "konflikte": 657837,
+      "branches": 916310
+     },
+     "stufen": {
+      "0": {
+       "optimum": 51,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9984,
+       "blaetter": 0,
+       "runden": 20075,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 20,
+       "fehl_fest": 9964,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 50,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9980,
+       "blaetter": 1,
+       "runden": 37157,
+       "loesungen": 1,
+       "tt_schluesse": 37490,
+       "fehl_vorrang": 12,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9968,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 49,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9980,
+       "blaetter": 2,
+       "runden": 29760,
+       "loesungen": 2,
+       "tt_schluesse": 16897,
+       "fehl_vorrang": 30,
+       "fehl_fest": 0,
+       "fehl_timetabling": 7643,
+       "fehl_energie": 2307,
+       "fehl_wurzel": 0
+      }
+     }
+    }
+   ]
+  },
+  "C": {
+   "n": 20,
+   "ressourcen": 2,
+   "kap": 4,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "budget": 20000,
+   "stufen": [
+    0,
+    1,
+    2
+   ],
+   "instanzen": [
+    {
+     "seed": 0,
+     "untere_schranke": 50,
+     "start_schranke": 59,
+     "cpsat": {
+      "optimum": 55,
+      "bewiesen": true,
+      "konflikte": 10146,
+      "branches": 21461
+     },
+     "stufen": {
+      "0": {
+       "optimum": 59,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9982,
+       "blaetter": 0,
+       "runden": 20680,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 607,
+       "fehl_fest": 9375,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 58,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9991,
+       "blaetter": 1,
+       "runden": 31399,
+       "loesungen": 1,
+       "tt_schluesse": 34413,
+       "fehl_vorrang": 4661,
+       "fehl_fest": 0,
+       "fehl_timetabling": 5330,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 58,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9996,
+       "blaetter": 1,
+       "runden": 30759,
+       "loesungen": 1,
+       "tt_schluesse": 34054,
+       "fehl_vorrang": 4601,
+       "fehl_fest": 0,
+       "fehl_timetabling": 4735,
+       "fehl_energie": 660,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 1,
+     "untere_schranke": 61,
+     "start_schranke": 76,
+     "cpsat": {
+      "optimum": 72,
+      "bewiesen": true,
+      "konflikte": 3518,
+      "branches": 8703
+     },
+     "stufen": {
+      "0": {
+       "optimum": 76,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9994,
+       "blaetter": 0,
+       "runden": 30006,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 9755,
+       "fehl_fest": 239,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 73,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9990,
+       "blaetter": 3,
+       "runden": 30351,
+       "loesungen": 3,
+       "tt_schluesse": 18488,
+       "fehl_vorrang": 4702,
+       "fehl_fest": 0,
+       "fehl_timetabling": 5288,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 73,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9992,
+       "blaetter": 3,
+       "runden": 29282,
+       "loesungen": 3,
+       "tt_schluesse": 15355,
+       "fehl_vorrang": 4113,
+       "fehl_fest": 0,
+       "fehl_timetabling": 4097,
+       "fehl_energie": 1782,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 2,
+     "untere_schranke": 39,
+     "start_schranke": 44,
+     "cpsat": {
+      "optimum": 42,
+      "bewiesen": true,
+      "konflikte": 458,
+      "branches": 1265
+     },
+     "stufen": {
+      "0": {
+       "optimum": 44,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9994,
+       "blaetter": 0,
+       "runden": 29846,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 9920,
+       "fehl_fest": 74,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 42,
+       "bewiesen": true,
+       "knoten": 19323,
+       "fehlschlaege": 9660,
+       "blaetter": 2,
+       "runden": 30858,
+       "loesungen": 2,
+       "tt_schluesse": 42900,
+       "fehl_vorrang": 3251,
+       "fehl_fest": 0,
+       "fehl_timetabling": 6409,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 42,
+       "bewiesen": true,
+       "knoten": 18291,
+       "fehlschlaege": 9144,
+       "blaetter": 2,
+       "runden": 28831,
+       "loesungen": 2,
+       "tt_schluesse": 41217,
+       "fehl_vorrang": 2814,
+       "fehl_fest": 0,
+       "fehl_timetabling": 5511,
+       "fehl_energie": 819,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 3,
+     "untere_schranke": 46,
+     "start_schranke": 61,
+     "cpsat": {
+      "optimum": 52,
+      "bewiesen": true,
+      "konflikte": 15632,
+      "branches": 65156
+     },
+     "stufen": {
+      "0": {
+       "optimum": 60,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9976,
+       "blaetter": 1,
+       "runden": 23399,
+       "loesungen": 1,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 2584,
+       "fehl_fest": 7392,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 53,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9986,
+       "blaetter": 5,
+       "runden": 32232,
+       "loesungen": 5,
+       "tt_schluesse": 27736,
+       "fehl_vorrang": 4428,
+       "fehl_fest": 0,
+       "fehl_timetabling": 5558,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 53,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9989,
+       "blaetter": 5,
+       "runden": 31752,
+       "loesungen": 5,
+       "tt_schluesse": 27235,
+       "fehl_vorrang": 4414,
+       "fehl_fest": 0,
+       "fehl_timetabling": 5127,
+       "fehl_energie": 448,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 4,
+     "untere_schranke": 60,
+     "start_schranke": 66,
+     "cpsat": {
+      "optimum": 62,
+      "bewiesen": false,
+      "konflikte": 928580,
+      "branches": 1241932
+     },
+     "stufen": {
+      "0": {
+       "optimum": 66,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9975,
+       "blaetter": 0,
+       "runden": 22737,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 116,
+       "fehl_fest": 9859,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 66,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9978,
+       "blaetter": 0,
+       "runden": 29721,
+       "loesungen": 0,
+       "tt_schluesse": 36454,
+       "fehl_vorrang": 66,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9912,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 62,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9985,
+       "blaetter": 4,
+       "runden": 30416,
+       "loesungen": 4,
+       "tt_schluesse": 16916,
+       "fehl_vorrang": 3434,
+       "fehl_fest": 0,
+       "fehl_timetabling": 5003,
+       "fehl_energie": 1548,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 5,
+     "untere_schranke": 43,
+     "start_schranke": 51,
+     "cpsat": {
+      "optimum": 44,
+      "bewiesen": true,
+      "konflikte": 344,
+      "branches": 802
+     },
+     "stufen": {
+      "0": {
+       "optimum": 51,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9980,
+       "blaetter": 0,
+       "runden": 20973,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 4,
+       "fehl_fest": 9976,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 46,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9984,
+       "blaetter": 5,
+       "runden": 34476,
+       "loesungen": 5,
+       "tt_schluesse": 24940,
+       "fehl_vorrang": 119,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9865,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 46,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9984,
+       "blaetter": 5,
+       "runden": 33561,
+       "loesungen": 5,
+       "tt_schluesse": 24072,
+       "fehl_vorrang": 119,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9627,
+       "fehl_energie": 238,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 6,
+     "untere_schranke": 48,
+     "start_schranke": 57,
+     "cpsat": {
+      "optimum": 57,
+      "bewiesen": true,
+      "konflikte": 0,
+      "branches": 21
+     },
+     "stufen": {
+      "0": {
+       "optimum": 57,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9982,
+       "blaetter": 0,
+       "runden": 30016,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 9982,
+       "fehl_fest": 0,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 57,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9989,
+       "blaetter": 0,
+       "runden": 29562,
+       "loesungen": 0,
+       "tt_schluesse": 1588,
+       "fehl_vorrang": 473,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9516,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 57,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9989,
+       "blaetter": 0,
+       "runden": 29562,
+       "loesungen": 0,
+       "tt_schluesse": 1588,
+       "fehl_vorrang": 473,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9516,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 7,
+     "untere_schranke": 35,
+     "start_schranke": 37,
+     "cpsat": {
+      "optimum": 36,
+      "bewiesen": true,
+      "konflikte": 522,
+      "branches": 1102
+     },
+     "stufen": {
+      "0": {
+       "optimum": 37,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9980,
+       "blaetter": 0,
+       "runden": 20215,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 5,
+       "fehl_fest": 9975,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 36,
+       "bewiesen": true,
+       "knoten": 3211,
+       "fehlschlaege": 1605,
+       "blaetter": 1,
+       "runden": 5408,
+       "loesungen": 1,
+       "tt_schluesse": 3968,
+       "fehl_vorrang": 471,
+       "fehl_fest": 0,
+       "fehl_timetabling": 1134,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 36,
+       "bewiesen": true,
+       "knoten": 2897,
+       "fehlschlaege": 1448,
+       "blaetter": 1,
+       "runden": 4390,
+       "loesungen": 1,
+       "tt_schluesse": 2915,
+       "fehl_vorrang": 393,
+       "fehl_fest": 0,
+       "fehl_timetabling": 633,
+       "fehl_energie": 422,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 8,
+     "untere_schranke": 51,
+     "start_schranke": 56,
+     "cpsat": {
+      "optimum": 55,
+      "bewiesen": true,
+      "konflikte": 11271,
+      "branches": 30058
+     },
+     "stufen": {
+      "0": {
+       "optimum": 56,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9981,
+       "blaetter": 0,
+       "runden": 22508,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 64,
+       "fehl_fest": 9917,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 55,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9978,
+       "blaetter": 1,
+       "runden": 36347,
+       "loesungen": 1,
+       "tt_schluesse": 35344,
+       "fehl_vorrang": 401,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9577,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 55,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9984,
+       "blaetter": 1,
+       "runden": 32408,
+       "loesungen": 1,
+       "tt_schluesse": 23519,
+       "fehl_vorrang": 842,
+       "fehl_fest": 0,
+       "fehl_timetabling": 4986,
+       "fehl_energie": 4156,
+       "fehl_wurzel": 0
+      }
+     }
+    },
+    {
+     "seed": 9,
+     "untere_schranke": 52,
+     "start_schranke": 57,
+     "cpsat": {
+      "optimum": 53,
+      "bewiesen": true,
+      "konflikte": 463769,
+      "branches": 717265
+     },
+     "stufen": {
+      "0": {
+       "optimum": 57,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9971,
+       "blaetter": 0,
+       "runden": 23298,
+       "loesungen": 0,
+       "tt_schluesse": 0,
+       "fehl_vorrang": 904,
+       "fehl_fest": 9067,
+       "fehl_timetabling": 0,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "1": {
+       "optimum": 54,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9969,
+       "blaetter": 3,
+       "runden": 34154,
+       "loesungen": 3,
+       "tt_schluesse": 32027,
+       "fehl_vorrang": 438,
+       "fehl_fest": 0,
+       "fehl_timetabling": 9531,
+       "fehl_energie": 0,
+       "fehl_wurzel": 0
+      },
+      "2": {
+       "optimum": 54,
+       "bewiesen": false,
+       "knoten": 20001,
+       "fehlschlaege": 9969,
+       "blaetter": 3,
+       "runden": 31104,
+       "loesungen": 3,
+       "tt_schluesse": 28907,
+       "fehl_vorrang": 425,
+       "fehl_fest": 0,
+       "fehl_timetabling": 6277,
+       "fehl_energie": 3267,
+       "fehl_wurzel": 0
+      }
+     }
+    }
+   ]
+  }
+ },
+ "groesse": {
+  "A": {
+   "n": 10,
+   "ressourcen": 1,
+   "kap": 3,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "instanzen": [
+    {
+     "seed": 0,
+     "H": 30,
+     "variablen": 5969,
+     "klauseln": 20365
+    },
+    {
+     "seed": 1,
+     "H": 39,
+     "variablen": 10593,
+     "klauseln": 36599
+    },
+    {
+     "seed": 2,
+     "H": 33,
+     "variablen": 6113,
+     "klauseln": 20868
+    },
+    {
+     "seed": 3,
+     "H": 40,
+     "variablen": 9434,
+     "klauseln": 32113
+    },
+    {
+     "seed": 4,
+     "H": 35,
+     "variablen": 7859,
+     "klauseln": 26566
+    },
+    {
+     "seed": 5,
+     "H": 21,
+     "variablen": 2837,
+     "klauseln": 9456
+    },
+    {
+     "seed": 6,
+     "H": 22,
+     "variablen": 2416,
+     "klauseln": 8001
+    },
+    {
+     "seed": 7,
+     "H": 38,
+     "variablen": 6170,
+     "klauseln": 20741
+    },
+    {
+     "seed": 8,
+     "H": 38,
+     "variablen": 9443,
+     "klauseln": 32050
+    },
+    {
+     "seed": 9,
+     "H": 27,
+     "variablen": 4385,
+     "klauseln": 15016
+    }
+   ]
+  },
+  "B": {
+   "n": 15,
+   "ressourcen": 1,
+   "kap": 4,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "instanzen": [
+    {
+     "seed": 0,
+     "H": 50,
+     "variablen": 22167,
+     "klauseln": 82053
+    },
+    {
+     "seed": 1,
+     "H": 72,
+     "variablen": 51005,
+     "klauseln": 189872
+    },
+    {
+     "seed": 2,
+     "H": 51,
+     "variablen": 22435,
+     "klauseln": 81261
+    },
+    {
+     "seed": 3,
+     "H": 44,
+     "variablen": 16305,
+     "klauseln": 59831
+    },
+    {
+     "seed": 4,
+     "H": 52,
+     "variablen": 26682,
+     "klauseln": 97425
+    },
+    {
+     "seed": 5,
+     "H": 61,
+     "variablen": 36647,
+     "klauseln": 136392
+    },
+    {
+     "seed": 6,
+     "H": 58,
+     "variablen": 26568,
+     "klauseln": 98702
+    },
+    {
+     "seed": 7,
+     "H": 62,
+     "variablen": 38501,
+     "klauseln": 142211
+    },
+    {
+     "seed": 8,
+     "H": 50,
+     "variablen": 24507,
+     "klauseln": 91208
+    },
+    {
+     "seed": 9,
+     "H": 51,
+     "variablen": 27474,
+     "klauseln": 102055
+    }
+   ]
+  },
+  "C": {
+   "n": 20,
+   "ressourcen": 2,
+   "kap": 4,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "instanzen": [
+    {
+     "seed": 0,
+     "H": 59,
+     "variablen": 53984,
+     "klauseln": 194168
+    },
+    {
+     "seed": 1,
+     "H": 76,
+     "variablen": 86298,
+     "klauseln": 312930
+    },
+    {
+     "seed": 2,
+     "H": 44,
+     "variablen": 29506,
+     "klauseln": 105557
+    },
+    {
+     "seed": 3,
+     "H": 61,
+     "variablen": 57810,
+     "klauseln": 209575
+    },
+    {
+     "seed": 4,
+     "H": 66,
+     "variablen": 73927,
+     "klauseln": 271242
+    },
+    {
+     "seed": 5,
+     "H": 51,
+     "variablen": 33017,
+     "klauseln": 119948
+    },
+    {
+     "seed": 6,
+     "H": 57,
+     "variablen": 40823,
+     "klauseln": 150846
+    },
+    {
+     "seed": 7,
+     "H": 37,
+     "variablen": 21936,
+     "klauseln": 78502
+    },
+    {
+     "seed": 8,
+     "H": 56,
+     "variablen": 41053,
+     "klauseln": 151763
+    },
+    {
+     "seed": 9,
+     "H": 57,
+     "variablen": 45085,
+     "klauseln": 165806
+    }
+   ]
+  },
+  "D": {
+   "n": 30,
+   "ressourcen": 2,
+   "kap": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "instanzen": [
+    {
+     "seed": 0,
+     "H": 92,
+     "variablen": 224368,
+     "klauseln": 886825
+    },
+    {
+     "seed": 1,
+     "H": 90,
+     "variablen": 166885,
+     "klauseln": 664614
+    },
+    {
+     "seed": 2,
+     "H": 97,
+     "variablen": 211392,
+     "klauseln": 842561
+    },
+    {
+     "seed": 3,
+     "H": 98,
+     "variablen": 218622,
+     "klauseln": 873433
+    },
+    {
+     "seed": 4,
+     "H": 90,
+     "variablen": 190882,
+     "klauseln": 769510
+    },
+    {
+     "seed": 5,
+     "H": 104,
+     "variablen": 226219,
+     "klauseln": 913693
+    },
+    {
+     "seed": 6,
+     "H": 59,
+     "variablen": 76736,
+     "klauseln": 300945
+    },
+    {
+     "seed": 7,
+     "H": 71,
+     "variablen": 109030,
+     "klauseln": 427270
+    },
+    {
+     "seed": 8,
+     "H": 72,
+     "variablen": 103025,
+     "klauseln": 403716
+    },
+    {
+     "seed": 9,
+     "H": 89,
+     "variablen": 179075,
+     "klauseln": 711813
+    }
+   ]
+  }
+ },
+ "sat": {
+  "A_opt": {
+   "zelle": "A",
+   "fall": "opt",
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "budget": 20000,
+   "instanzen": [
+    {
+     "seed": 0,
+     "H": 30,
+     "optimum": 30,
+     "sat_antwort": true,
+     "sat_konflikte": 72,
+     "variablen": 5969,
+     "klauseln": 20365,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 29
+    },
+    {
+     "seed": 1,
+     "H": 37,
+     "optimum": 37,
+     "sat_antwort": true,
+     "sat_konflikte": 651,
+     "variablen": 9939,
+     "klauseln": 34033,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 5
+    },
+    {
+     "seed": 2,
+     "H": 33,
+     "optimum": 33,
+     "sat_antwort": true,
+     "sat_konflikte": 4,
+     "variablen": 6113,
+     "klauseln": 20868,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 0
+    },
+    {
+     "seed": 3,
+     "H": 40,
+     "optimum": 40,
+     "sat_antwort": true,
+     "sat_konflikte": 5,
+     "variablen": 9434,
+     "klauseln": 32113,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 0
+    },
+    {
+     "seed": 4,
+     "H": 35,
+     "optimum": 35,
+     "sat_antwort": true,
+     "sat_konflikte": 592,
+     "variablen": 7859,
+     "klauseln": 26566,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 0
+    },
+    {
+     "seed": 5,
+     "H": 20,
+     "optimum": 20,
+     "sat_antwort": true,
+     "sat_konflikte": 92,
+     "variablen": 2666,
+     "klauseln": 8805,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 62
+    }
+   ]
+  },
+  "A_opt1": {
+   "zelle": "A",
+   "fall": "opt1",
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "budget": 20000,
+   "instanzen": [
+    {
+     "seed": 0,
+     "H": 29,
+     "optimum": 30,
+     "sat_antwort": false,
+     "sat_konflikte": 1594,
+     "variablen": 5717,
+     "klauseln": 19395,
+     "cpsat_antwort": false,
+     "cpsat_konflikte": 153
+    },
+    {
+     "seed": 1,
+     "H": 36,
+     "optimum": 37,
+     "sat_antwort": null,
+     "sat_konflikte": 20000,
+     "variablen": 9612,
+     "klauseln": 32765,
+     "cpsat_antwort": false,
+     "cpsat_konflikte": 1606
+    },
+    {
+     "seed": 2,
+     "H": 32,
+     "optimum": 33,
+     "sat_antwort": false,
+     "sat_konflikte": 1117,
+     "variablen": 5861,
+     "klauseln": 19896,
+     "cpsat_antwort": false,
+     "cpsat_konflikte": 147
+    },
+    {
+     "seed": 3,
+     "H": 39,
+     "optimum": 40,
+     "sat_antwort": false,
+     "sat_konflikte": 4957,
+     "variablen": 9110,
+     "klauseln": 30867,
+     "cpsat_antwort": false,
+     "cpsat_konflikte": 0
+    },
+    {
+     "seed": 4,
+     "H": 34,
+     "optimum": 35,
+     "sat_antwort": false,
+     "sat_konflikte": 4956,
+     "variablen": 7541,
+     "klauseln": 25373,
+     "cpsat_antwort": false,
+     "cpsat_konflikte": 0
+    },
+    {
+     "seed": 5,
+     "H": 19,
+     "optimum": 20,
+     "sat_antwort": false,
+     "sat_konflikte": 1950,
+     "variablen": 2495,
+     "klauseln": 8164,
+     "cpsat_antwort": false,
+     "cpsat_konflikte": 97
+    }
+   ]
+  },
+  "B_opt": {
+   "zelle": "B",
+   "fall": "opt",
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "budget": 20000,
+   "instanzen": [
+    {
+     "seed": 0,
+     "H": 46,
+     "optimum": 46,
+     "sat_antwort": true,
+     "sat_konflikte": 756,
+     "variablen": 19711,
+     "klauseln": 72007,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 2160
+    },
+    {
+     "seed": 1,
+     "H": 70,
+     "optimum": 70,
+     "sat_antwort": true,
+     "sat_konflikte": 17904,
+     "variablen": 49185,
+     "klauseln": 182281,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 859
+    },
+    {
+     "seed": 2,
+     "H": 49,
+     "optimum": 49,
+     "sat_antwort": true,
+     "sat_konflikte": 1609,
+     "variablen": 21165,
+     "klauseln": 76180,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 556
+    },
+    {
+     "seed": 3,
+     "H": 39,
+     "optimum": 39,
+     "sat_antwort": true,
+     "sat_konflikte": 4588,
+     "variablen": 13615,
+     "klauseln": 48981,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 103
+    },
+    {
+     "seed": 4,
+     "H": 52,
+     "optimum": 52,
+     "sat_antwort": true,
+     "sat_konflikte": 1087,
+     "variablen": 26682,
+     "klauseln": 97425,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 251
+    },
+    {
+     "seed": 5,
+     "H": 60,
+     "optimum": 60,
+     "sat_antwort": true,
+     "sat_konflikte": 3045,
+     "variablen": 35892,
+     "klauseln": 133227,
+     "cpsat_antwort": true,
+     "cpsat_konflikte": 57
+    }
+   ]
+  }
+ }
+}

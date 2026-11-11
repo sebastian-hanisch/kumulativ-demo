@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest>=8.0
+ortools>=9.10   # nur Gegenprobe (CP-SAT) in den Tests und im Messskript tools/messung_sweeps.py, nie in der App
