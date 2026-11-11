@@ -13,6 +13,7 @@ import kum_algorithm as A
 import kum_aufzaehlung as Z
 import kum_constants as C
 import kum_evaluation as ev
+import kum_live as L
 import kum_sat as S
 from kum_layout import dunkles_design, kopf_css
 from kum_presets import (
@@ -51,27 +52,17 @@ def _aufzaehlung(bsp):
     return Z.aufzaehlen(HANDBEISPIELE[C.HB_NAMEN[bsp]])
 
 
-@st.cache_data(show_spinner=False)
-def _live(seed, n, res, cap, budget):
-    return ev.live_vergleich(ev.Settings(seed=seed, n=n, res=res, cap=cap, budget=budget))
-
-
-@st.cache_data(show_spinner=False)
-def _live_reihe(zelle, budget):
-    return ev.live_reihe(zelle, budget)
-
-
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False, max_entries=16)
 def _optimum_live(seed, n, res, cap, budget):
     return A.loese(make_instanz(n, res, cap, seed), 1, budget)
 
 
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False, max_entries=16)
 def _sat_live(seed, n, res, cap, H, budget):
     return S.sat_entscheide(make_instanz(n, res, cap, seed), H, budget)
 
 
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False, max_entries=16)
 def _mini_entscheidung(seed, n, res, cap, H, budget):
     return A.entscheide(make_instanz(n, res, cap, seed), H, 1, budget)
 
@@ -224,10 +215,9 @@ if zkey in ("A", "B"):
     st.markdown(f"**Messreihe auf Knopfdruck** (Zelle {zkey}, dieselben 10 Instanzen, Knotenbudget {_zahl(C.LIVE_REIHE_BUDGET)} statt {_zahl(reihe['budget'])})")
     if st.button(f"Reihe rechnen: Zelle {zkey}", key="reihe_knopf"):
         st.session_state["reihe_live"] = zkey
-        with st.spinner(f"Rechnet 3 Stufen auf 10 Instanzen (Zelle {zkey}, Budget {_zahl(C.LIVE_REIHE_BUDGET)}) … (je nach Zelle bis etwa eine halbe Minute)"):
-            _live_reihe(zkey, C.LIVE_REIHE_BUDGET)
+        L.reihe(zkey, C.LIVE_REIHE_BUDGET)
     if st.session_state.get("reihe_live") == zkey:
-        lr = _live_reihe(zkey, C.LIVE_REIHE_BUDGET)
+        lr = L.reihe_aus_speicher(zkey, C.LIVE_REIHE_BUDGET)
         lrows = ev.statistik(lr)
         st.markdown(_md_table(["Stufe", "bewiesen", "Median", "90-%-Wert", "Maximum", "Abbrüche"], [[C.STAGE_SHORT[r["stufe"]], f"{r['bewiesen']} von {r['n']}", _zahl(r["median"]), _zahl(r["p90"]), _zahl(r["max"]), r["abbrueche"]] for r in lrows]))
         kind, text = ev.verdict_stufen(lrows, f"Zelle {zkey}, live mit Budget {_zahl(C.LIVE_REIHE_BUDGET)}")
@@ -239,10 +229,9 @@ st.markdown("**Eine Einzelinstanz live rechnen** (Aktivitäten, Ressourcen, Kapa
 live_key = (int(seed), int(n), int(res), int(cap), int(budget))
 if st.button(f"Rechnen: n = {n}, {res} Ressource(n), Kapazität {cap}, Zufalls-Seed {seed}, Budget {_zahl(budget)}", key="live_knopf"):
     st.session_state["live_key"] = live_key
-    with st.spinner("Rechnet die Stufen 0, 1 und 2 bis zum Beweis des Optimums … (Sekunden bis etwa eine Minute, je nach Größe und Budget)"):
-        _live(*live_key)
+    L.stufen_einzel(live_key)
 if st.session_state.get("live_key") == live_key:
-    erg = _live(*live_key)
+    erg = L.einzel_aus_speicher(live_key)
     st.markdown(_md_table(["Stufe", "Knoten", "Fehlschläge", "Timetabling-Schlüsse", "bester Makespan", "bewiesen"],
                           [[C.STAGE_NAMES[s], _zahl(e.z.knoten), _zahl(e.z.fehlschlaege), _zahl(e.z.tt_schluesse), e.optimum, "ja" if e.bewiesen else "nein (Abbruch)"] for s, e in erg.items()]))
     kind, text = ev.verdict_einzel(erg, int(budget))
@@ -299,7 +288,8 @@ sat_budget = st.slider("Konfliktbudget des SAT-Laufs", *bounds("sat_budget_slide
 if sat_h == 0:
     H = konstr[0]
 else:
-    opt_run = _optimum_live(int(seed), int(n), int(res), int(cap), int(budget))
+    with st.spinner("Bestimmt das Optimum (Stufe 1) für den Horizont …"):
+        opt_run = _optimum_live(int(seed), int(n), int(res), int(cap), int(budget))
     H = opt_run.optimum - (1 if sat_h == 2 else 0)
     if not opt_run.bewiesen:
         st.warning(f"Das Optimum ist nach {_zahl(budget)} Knoten nicht bewiesen; H bezieht sich auf den besten gefundenen Makespan {opt_run.optimum} (obere Schranke).")
@@ -314,8 +304,9 @@ else:
     st.caption("Exakt gezählt (ohne die Klauseln zu bauen; ein Test vergleicht die Zählung mit der gebauten Kodierung).")
     if st.button(f"Kern-CDCL rechnen (H = {H}, Budget {_zahl(sat_budget)} Konflikte)", key="sat_knopf"):
         st.session_state["sat_key"] = (int(seed), int(n), int(res), int(cap), int(H), int(sat_budget))
-        with st.spinner("Rechnet das Kern-CDCL … (Sekunden bis einige Minuten, je nach Größe, H und Budget; Python-Löser)"):
+        with st.status("Rechnet das Kern-CDCL: ein einzelner Lauf bis zur Antwort oder bis zum Konfliktbudget, ohne Zwischenstand …", expanded=True) as sat_status:
             _sat_live(*st.session_state["sat_key"])
+            sat_status.update(label="Kern-CDCL: fertig", state="complete", expanded=False)
     if st.session_state.get("sat_key") == (int(seed), int(n), int(res), int(cap), int(H), int(sat_budget)):
         sr = _sat_live(*st.session_state["sat_key"])
         mini = _mini_entscheidung(int(seed), int(n), int(res), int(cap), int(H), int(budget))

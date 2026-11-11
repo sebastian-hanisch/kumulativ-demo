@@ -103,6 +103,7 @@ Messreihen: Zufallsinstanzen mit Dauern 1 bis 9, **je 10 feste Instanzen** (Zufa
 | `kum_constants.py` | Regler-Grenzen, Zellen, Schwelle, Farben, Presets |
 | `kum_evaluation.py` | Statistik der Messreihen, Live-Läufe, Verdikte |
 | `kum_layout.py` | Fester Kopf (Stylesheet) |
+| `kum_live.py` | Live-Knöpfe: Zwischenspeicher (`st.cache_data`, je Einheit) und Fortschrittsanzeige (zählt die fertigen Einheiten) |
 | `kum_presets.py` | Permalink, Presets (Schnellstart in der Seitenleiste), Zufalls-Seed-Button |
 | `kum_sat.py` | Zeitindizierte SAT-Kodierung, Größenzählung, SAT-Entscheidung |
 | `kum_scenario.py` | Instanzen, Handbeispiele, Schranken, Konstruktion, Planprüfer |

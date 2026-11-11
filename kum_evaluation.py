@@ -140,14 +140,23 @@ def live_vergleich(s: Settings, stufen=C.STAGES) -> dict:
     return {st: A.loese(inst, st, budget=s.budget) for st in stufen}
 
 
+def live_reihe_einheit(zelle: str, seed: int, stufe: int, budget: int) -> dict:
+    """Eine Einheit der Messreihe: eine Stufe auf einer Instanz der Zelle (Format wie in der vorgerechneten Reihe)."""
+    n, res, cap = C.ZELLEN[zelle]
+    r = A.loese(make_instanz(n, res, cap, seed), stufe, budget=budget)
+    return {**{"optimum": r.optimum, "bewiesen": r.bewiesen}, **r.z.als_dict()}
+
+
+def live_reihe_aufbauen(zelle: str, budget: int, einheit, stufen=C.STAGES) -> dict:
+    """Setzt die Reihe aus den Einheiten zusammen; `einheit(zelle, seed, stufe, budget)` liefert eine Einheit (gerechnet oder aus dem Zwischenspeicher)."""
+    n, res, cap = C.ZELLEN[zelle]
+    zeilen = [{"seed": seed, "stufen": {str(st): einheit(zelle, seed, st, budget) for st in stufen}} for seed in C.SWEEP_SEEDS]
+    return {"n": n, "ressourcen": res, "kap": cap, "seeds": list(C.SWEEP_SEEDS), "budget": budget, "stufen": list(stufen), "instanzen": zeilen}
+
+
 def live_reihe(zelle: str, budget: int, stufen=C.STAGES) -> dict:
     """Messreihe auf Knopfdruck: die 10 festen Instanzen der Zelle, alle Stufen, im selben Format wie die vorgerechnete Reihe (ohne CP-SAT)."""
-    n, res, cap = C.ZELLEN[zelle]
-    zeilen = []
-    for seed in C.SWEEP_SEEDS:
-        inst = make_instanz(n, res, cap, seed)
-        zeilen.append({"seed": seed, "stufen": {str(st): {**{"optimum": r.optimum, "bewiesen": r.bewiesen}, **r.z.als_dict()} for st in stufen for r in [A.loese(inst, st, budget=budget)]}})
-    return {"n": n, "ressourcen": res, "kap": cap, "seeds": list(C.SWEEP_SEEDS), "budget": budget, "stufen": list(stufen), "instanzen": zeilen}
+    return live_reihe_aufbauen(zelle, budget, live_reihe_einheit, stufen)
 
 
 def widerspruch_im_optimum(erg: dict) -> bool:
